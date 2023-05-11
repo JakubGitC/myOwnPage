@@ -30,6 +30,10 @@ window.addEventListener("scroll", function () {
   }
   prevScrollpos = currentScrollPos;
 });
+window.onload = function () {
+  var video = document.getElementById("video"); // pobranie elementu video
+  video.play(); // rozpoczęcie odtwarzania wideo
+};
 /*
 //Button to the top
 const scrollToTopButton = document.querySelector(".scrollBtn");
