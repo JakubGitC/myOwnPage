@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: rgb(21, 94, 239); /* definicja zmiennej */
+  --animationColor: white;
+}
+
+body,
+main {
+  width: 100vw;
+  overflow-x: hidden;
+}
+header {
+  height: 20vh;
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  top: 3%;
+  transition: all 1s ease-in;
+}
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header ul li {
+  padding: 0.7rem 1rem;
+  backdrop-filter: blur(10px);
+
+  list-style-type: none;
+}
+header ul li a {
+  color: var(--animationColor);
+  text-decoration: none;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+header ul li a span {
+  color: var(--animationColor);
+  margin-right: 1rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
+  height: 100%;
+  overflow: hidden;
+}
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%;
+  min-height: 100%;
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+}
+.page {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: auto;
+  background-attachment: fixed;
+  margin-right: auto;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.bigText {
+  font-size: 4rem;
+  text-align: center;
+  animation-name: animate;
+  animation-duration: 8s;
+  padding: 2rem;
+  animation-iteration-count: infinite;
+}
+.smallText {
+  font-size: 1rem;
+  z-index: 10;
+  text-align: center;
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+/*Other buttons*/
+button.menuBtn {
+  display: none;
+  z-index: 100;
+}
+button.scrollBtn {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  border-radius: 50%;
+  background-color: Transparent;
+  backdrop-filter: blur(0.2rem);
+  border: none;
+}
+
+button.scrollBtn i {
+  font-size: 4rem;
+  padding: 1.6rem 2rem;
+  border-radius: 50%;
+  display: block;
+}
+
+button.scrollBtn[data-btnshow="true"] {
+  display: block;
+}
+button.scrollBtn[data-btnshow="false"] {
+  display: none;
+}
+
+/*Animation for text*/
+@keyframes animate {
+  50% {
+    color: var(--primary-color);
+    text-shadow: 0 0 1px var(--animationColor), 0 0 2px var(--animationColor),
+      0 0 4px var(--animationColor), 0 0 8px var(--animationColor),
+      0 0 16px var(--animationColor), 0 0 32px var(--animationColor),
+      0 0 64px var(--animationColor);
+  }
+  0%,
+  100% {
+    color: var(--animationColor);
+    text-shadow: 0 0 1px var(--primary-color), 0 0 2px var(--primary-color),
+      0 0 4px var(--primary-color), 0 0 8px var(--primary-color),
+      0 0 16px var(--primary-color), 0 0 32px var(--primary-color),
+      0 0 64px var(--primary-color);
+  }
+}

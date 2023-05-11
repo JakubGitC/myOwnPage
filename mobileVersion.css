@@ -1,0 +1,178 @@
+@media (max-width: 900px) {
+  aside {
+    display: none;
+  }
+  .secondPage {
+    padding-left: 0vw;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    display: block;
+  }
+  /*Menu mobile*/
+  nav #menu {
+    z-index: 1000;
+    position: fixed;
+    padding: min(30vh, 10rem) 2rem;
+    inset: 0 0 0 30%;
+    background: hsla(0, 0, 100%, 0.1);
+    flex-direction: column;
+    background-color: Transparent;
+    backdrop-filter: blur(0.2rem);
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 10vw;
+    transform: translateX(100%);
+    transition: transform 400ms ease-out;
+    margin-right: 0rem;
+  }
+  button.menuBtn {
+    z-index: 1000;
+    display: block;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    font-size: 3rem;
+    margin: 1rem 0.5rem;
+    right: 1rem;
+  }
+  #menu li {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(0.3rem);
+    padding: 0.2rem 6vw 0.2rem 0;
+  }
+  #menu li a {
+    font-size: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+  }
+  #menu a > [aria-hidden="true"] {
+    font-size: 2.2rem;
+  }
+  #menu[data-visible="true"] {
+    transform: translateX(0%);
+  }
+  #menu a > [aria-hidden="true"] {
+    font-weight: 900;
+    margin-right: 0.7em;
+  }
+  button.scrollBtn {
+    display: none;
+  }
+  aside {
+    display: none;
+  }
+
+  /*Starting Page Mobile*/
+  .firstPage {
+    height: 100vh;
+    width: 100vw;
+  }
+  .firstPage > h2 {
+    font-size: 4.1rem;
+    text-align: center;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding-right: 0;
+    top: 10%;
+    width: auto;
+    height: auto;
+  }
+  .firstPage > span.aboutMe {
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    left: 0;
+    right: 0;
+    padding-right: 0;
+    top: 34%;
+    width: auto;
+    height: auto;
+    backdrop-filter: blur(0.9rem);
+    z-index: 1;
+  }
+  .firstPage > img {
+    top: 5%;
+  }
+  button.btnAboutMe {
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    left: 30%;
+    right: 0;
+    padding: 0.2rem;
+    top: 50%;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  /*Adding styles to text*/
+  .firstPage > span.quote {
+    font-size: 1rem;
+    text-align: center;
+    left: 0;
+    right: 0;
+    padding-right: 0;
+    top: 22%;
+    width: max-content;
+    height: auto;
+    backdrop-filter: blur(0.9rem);
+    z-index: 1;
+  }
+
+  .firstPage span.quote > span.user {
+    font-size: 1.6rem;
+  }
+  .firstPage span.quote > span.like {
+    font-size: 1.2rem;
+  }
+  .firstPage span.quote > span.if {
+    font-size: 1.4rem;
+  }
+  .firstPage span.quote > span.explain {
+    font-size: 1rem;
+  }
+
+  .firstPage span.quote > span.end {
+    font-size: 1em;
+  }
+  section.firstPage {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .firstPage > * {
+    position: absolute;
+    height: 100vh;
+    width: 1300px;
+    left: -31%;
+    top: -10%;
+  }
+  /*Turning off background elements*/
+  .grayPlanet,
+  .smallStar,
+  .flash {
+    display: none;
+  }
+  .secondPage {
+    flex-direction: column;
+    height: 200vh;
+  }
+  .secondPage.aboutMeRight {
+    height: 100vh;
+  }
+  .secondPage.educationLeft {
+    height: 100vh;
+  }
+  .cover {
+    display: none;
+  }
+}

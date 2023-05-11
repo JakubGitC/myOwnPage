@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="otherCss.css" />
+    <link rel="stylesheet" href="mobileVersion.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/62ce6942a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="menu" data-visible="false">
+          <li>
+            <a href="#"> <span aria-hidden="true">00</span>Strona Główna </a>
+          </li>
+          <li>
+            <a href="#"> <span aria-hidden="true">01</span>O Mnie</a>
+          </li>
+          <li>
+            <a href="#"> <span aria-hidden="true">02</span>Doświadczenie</a>
+          </li>
+          <li>
+            <a href="#"> <span aria-hidden="true">03</span>Edukacje</a>
+          </li>
+          <li>
+            <a href="#"> <span aria-hidden="true">04</span>Umiejętności</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="menuBtn" aria-controls="menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <div class="video-container">
+      <video autoplay loop>
+        <source src="img/bg1.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <main>
+      <section class="firstPage page">
+        <h1 class="bigText">Jakub Czanecki</h1>
+        <span class="smallText quote">
+          <span class="user">User </span>interface is
+          <span class="like">like </span>a joke. <span class="if">If </span>you
+          have to <span class="explain">explain </span>it<br />
+          It is not that <span class="end"> good</span></span
+        >
+
+        <button class="btnAboutMe smallText">Download CV</button>
+        <span class="aboutMe smallText">Front End Developer </span>
+      </section>
+      <section class="secondPage page">
+        <h1 class="bigText">O Mnie</h1>
+        <p class="smallText pageText">
+          Mam na imię Kuba i jestem Front End Developerem. Już w szkole średniej
+          zacząłem intensywnie rozwijać swoją pasję do programowania i systemów
+          telekomunikacyjnych ale to ukończenie studiów w Wielkiej Brytani dało
+          mi możliwość szerszego spojrzenia na to, jak powinna wyglądać dobra
+          strona internetowa lub aplikacja webowa, zarówno pod względem
+          wizualnym, jak i marketingowym. Przy swoich projektach głównie używam
+          React.js, JavaScript, HTML oraz CSS. Bardzo dobrze posługuję się
+          językiem angielskim zarówno w mowie jak i piśmie. W trakcie studiów
+          brałem udział w projekcie badawczym „Opracowanie i weryfikacja modeli
+          symulacyjnych bramki odwracalnej”. Obecnie pracuję jako IT specjalist
+          gdzie zajmuje sie zarządzanie infrastrukturą informatyczną
+        </p>
+        <div class="container">
+          <div class="numberContainer">
+            <span class="number" data-val="6">0</span>
+            <span class="numberText">
+              Liczba lat od pierwszego zetknięcia się z kodem
+            </span>
+          </div>
+          <div class="numberContainer">
+            <span class="number" data-val="260">000</span>
+            <span class="numberText">
+              Liczba linii kodu, które napisałem w ciągu ostatniego tygodnia
+            </span>
+          </div>
+          <div class="numberContainer">
+            <span class="number" data-val="75">00</span>
+            <span class="numberText">
+              Liczba błędów, które naprawiłem w ciągu ostatniego miesiąca
+            </span>
+          </div>
+          <div class="numberContainer">
+            <span class="number" data-val="110">000</span>
+            <span class="numberText">
+              Liczba godzin, które poświęciłem w ciągu ostatniego miesiąca
+              pisanie kodu
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="thirdPage page">
+        <h1 class="bigText">Doświaczenie</h1>
+        <p class="smallText pageText"></p>
+
+        <div class="arrow">
+          <div class="dot"><span class="year">2015-2018</span></div>
+          <div class="yearInfo">
+            <span> </span>
+          </div>
+        </div>
+        <div class="arrow">
+          <div class="dot"><span class="year">2018-2021</span></div>
+          <div class="yearInfo">
+            <span></span>
+          </div>
+        </div>
+      </section>
+      <section class="forthPage page">
+        <h1 class="bigText">Edukacja</h1>
+        <div class="arrow">
+          <div class="dot"><span class="year">2015-2018</span></div>
+          <div class="yearInfo">
+            <span
+              >Liceum Ogólnokształcące w Łukówie im. Tadeusza Kościuszki</span
+            >
+            W mojej szkole zrealizowałem rozszerzenie z matematyki, fizyki i
+            informatyki
+          </div>
+        </div>
+        <div class="arrow">
+          <div class="dot"><span class="year">2018-2021</span></div>
+          <div class="yearInfo">
+            <span>De Montford University</span>
+            Ukończyłem informatyke na studiach uniwersyteckich w Wielkiej
+            Brytanii uzyskując Diploma of Higher Education
+          </div>
+        </div>
+        <div class="arrow">
+          <div class="dot"><span class="year">2022-2023</span></div>
+          <div class="yearInfo">
+            <span>Mega Kurs</span>
+            Jestem w trakcje Mega Kursu, który pokrywa tematy takie jak
+            Javascript, Typescript, React.js, Node.js, Express.JS, MySql MongoDB
+            i NestJS
+          </div>
+        </div>
+      </section>
+      <section class="fifthPage page">
+        <div class="bigText">My Skills</div>
+        <div data-speed="-1" class="container">
+          <div class="imgDiv"><img src="icons/html.svg" /></div>
+          <p class="descriptionDiv">Html</p>
+          <p class="detailsDiv">
+            Semantic HTML, Forms and Validations, Multimedia, Best Practices,
+            Accessibility, Basics of SEO etc.
+          </p>
+          <div class="skill-bar">
+            <span class="skill-p">
+              <span class="tooltip">70%</span>
+            </span>
+          </div>
+        </div>
+        <div data-speed="-1" class="container">
+          <div class="imgDiv"><img src="icons/css3.svg" /></div>
+          <p class="descriptionDiv">Css</p>
+          <p class="detailsDiv">
+            Responsive Web Design, Media Queries, Making layouts, BOX Model,
+            Flex Box, CSS Grid, Positioning etc.
+          </p>
+          <div class="skill-bar">
+            <span class="skill-p">
+              <span class="tooltip">70%</span>
+            </span>
+          </div>
+        </div>
+        <div data-speed="-1" class="container">
+          <div class="imgDiv"><img src="icons/sass.svg" /></div>
+          <p class="descriptionDiv">Sass</p>
+          <p class="detailsDiv"></p>
+          <div class="skill-bar">
+            <span class="skill-p">
+              <span class="tooltip">70%</span>
+            </span>
+          </div>
+        </div>
+        <div data-speed="-1" class="container">
+          <div class="imgDiv"><img src="icons/javascript.svg" /></div>
+          <p class="descriptionDiv">Javascript</p>
+          <p class="detailsDiv">
+            ES6+, Variables, Data types, Arrays (advanced methods), Loops,
+            Functions, Obiects, Asynchronous JavaScript, Classes etc.
+          </p>
+          <div class="skill-bar">
+            <span class="skill-p">
+              <span class="tooltip">70%</span>
+            </span>
+          </div>
+        </div>
+        <div data-speed="-1" class="container">
+          <div class="imgDiv"><img src="icons/react.svg" /></div>
+          <p class="descriptionDiv">React</p>
+          <p class="detailsDiv">
+            Folder structure, React Hooks, React Router, Fetching data, Some
+            libraries, Framer Motion etc.
+          </p>
+          <div class="skill-bar">
+            <span class="skill-p">
+              <span class="tooltip">70%</span>
+            </span>
+          </div>
+        </div>
+        <div data-speed="-1" class="container">
+          <div class="imgDiv"><img src="icons/bootstrap.svg" /></div>
+          <p class="descriptionDiv">Bootstrap</p>
+          <p class="detailsDiv">
+            Quick design of a responsive website, grid system, components
+          </p>
+          <div class="skill-bar">
+            <span class="skill-p">
+              <span class="tooltip">70%</span>
+            </span>
+          </div>
+        </div>
+        <div data-speed="-1" class="container">
+          <div class="imgDiv"><img src="icons/git.svg" /></div>
+          <p class="descriptionDiv">Git</p>
+          <p class="detailsDiv">
+            Git init, add, commit, branch, merge, remote, push, clone, pull etc.
+            (currently in learning)
+          </p>
+          <div class="skill-bar">
+            <span class="skill-p">
+              <span class="tooltip">70%</span>
+            </span>
+          </div>
+        </div>
+        <div data-speed="-1" class="container">
+          <div class="imgDiv"><img src="icons/nodejs.svg" /></div>
+          <p class="descriptionDiv">Node</p>
+          <p class="detailsDiv">
+            Asynchrony, File system module, Path module, Processes, Promises,
+            Cryptography, Hash functions, Buffer, Stream etc. (currently in
+            learning)
+          </p>
+          <div class="skill-bar">
+            <span class="skill-p">
+              <span class="tooltip">70%</span>
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="scrollBtn" data-btnshow="false" aria-hidden="true">
+      <i class="fa-solid fa-arrow-up fa-bounce"></i>
+    </button>
+  </body>
+  <script src="index.js"></script>
+</html>
