@@ -24,6 +24,7 @@ section.firstPage {
 }
 
 .firstPage > span.quote {
+  position: absolute;
   z-index: 10;
   top: 35%;
   right: 10%;
@@ -107,6 +108,10 @@ button.btnAboutMe:hover::before {
   animation-iteration-count: infinite;
 }
 /*secondPage*/
+
+.secondPage {
+  min-height: 120vh;
+}
 .secondPage .pageText {
   margin-top: 1rem;
 }
@@ -121,7 +126,6 @@ button.btnAboutMe:hover::before {
 .secondPage .container .numberContainer {
   flex: 0 0 130px;
   height: 100%;
-
   display: flex;
   flex-direction: column;
 }
@@ -137,14 +141,16 @@ button.btnAboutMe:hover::before {
 }
 /*thirdPage*/
 .thirdPage {
-  height: 100vh;
+  height: 120vh;
 }
 .thirdPage .arrow:nth-of-type(1) {
   height: 5%;
 }
 /*forthPage*/
-.forthPage {
-  height: 130vh;
+
+.forthPage.page {
+  margin: auto;
+  height: 120vh;
 }
 .forthPage h1 {
   padding: 1rem;
@@ -196,29 +202,27 @@ button.btnAboutMe:hover::before {
   display: block;
   font-weight: 900;
   width: 100%;
-
   text-align: center;
 }
+
 /*fifthPage*/
 .fifthPage.page {
-  width: 70%;
-  height: 130vh;
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: flex-start;
   align-items: flex-start;
-  transform: translateY(-30px);
-  gap: 2rem;
   flex-wrap: wrap;
+  gap: 1rem 5rem;
 }
+
 .fifthPage div.bigText {
   width: 100%;
 }
 .fifthPage .container {
   flex: 0 0 150px;
-  padding: 1.4rem;
+  padding: 1rem;
   position: relative;
+  overflow: hidden;
 }
 
 .imgDiv {
@@ -244,7 +248,7 @@ button.btnAboutMe:hover::before {
   backdrop-filter: blur(10px);
   display: block;
   height: 100%;
-  padding: 1rem;
+  padding: 2.5rem 1rem;
   transform: scale(120%);
   text-align: center;
   color: white;
@@ -256,9 +260,10 @@ button.btnAboutMe:hover::before {
 }
 .skill-bar {
   height: 8px;
-  width: 70%;
+  transform: translateX(-100%);
   border-radius: 6px;
   margin-top: 0.9rem;
+  transition: all 2s ease-in;
   position: relative;
   background: var(--primary-color);
 }
@@ -284,4 +289,29 @@ button.btnAboutMe:hover::before {
   z-index: -1;
   background-color: #4070f4;
   transform: translateX(-50%) rotate(45deg);
+}
+.sixthPage {
+  margin-top: 50px;
+
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+label[for="msg"] {
+  margin-top: 25px;
+}
+form > * {
+  display: block;
+  width: 100%;
+}
+button[value="Wyślij"] {
+  margin: auto;
+  margin-top: 20px;
 }

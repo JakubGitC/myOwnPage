@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="otherCss.css" />
-    <link rel="stylesheet" href="mobileVersion.css" />
+
     <link rel="stylesheet" href="pages.css" />
+    <link rel="stylesheet" href="mobileVersion.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/62ce6942a8.js"
@@ -40,12 +41,13 @@
 
     <div class="video-container">
       <video autoplay loop>
-        <source src="img/bg.mp4" type="video/mp4" />
+        <source id="video" src="img/bg1.mp4" type="video/mp4" />
       </video>
     </div>
 
     <main>
       <section class="firstPage page">
+        <span class="aboutMe smallText">Front End Developer </span>
         <h1 class="bigText">Jakub Czanecki</h1>
         <span class="smallText quote">
           <span class="user">User </span>interface is
@@ -53,9 +55,7 @@
           have to <span class="explain">explain </span>it<br />
           It is not that <span class="end"> good</span></span
         >
-
         <button class="btnAboutMe smallText">Download CV</button>
-        <span class="aboutMe smallText">Front End Developer </span>
       </section>
       <section class="secondPage page">
         <h1 class="bigText">O Mnie</h1>
@@ -149,7 +149,7 @@
       </section>
       <section class="fifthPage page">
         <div class="bigText">My Skills</div>
-        <div data-speed="-1" class="container">
+        <div class="container">
           <div class="imgDiv"><img src="icons/html.svg" /></div>
           <p class="descriptionDiv">Html</p>
           <p class="detailsDiv">
@@ -158,11 +158,11 @@
           </p>
           <div class="skill-bar">
             <span class="skill-p">
-              <span class="tooltip">70%</span>
+              <span class="tooltip">95%</span>
             </span>
           </div>
         </div>
-        <div data-speed="-1" class="container">
+        <div class="container">
           <div class="imgDiv"><img src="icons/css3.svg" /></div>
           <p class="descriptionDiv">Css</p>
           <p class="detailsDiv">
@@ -171,21 +171,23 @@
           </p>
           <div class="skill-bar">
             <span class="skill-p">
-              <span class="tooltip">70%</span>
+              <span class="tooltip">95%</span>
             </span>
           </div>
         </div>
-        <div data-speed="-1" class="container">
+        <div d class="container">
           <div class="imgDiv"><img src="icons/sass.svg" /></div>
           <p class="descriptionDiv">Sass</p>
-          <p class="detailsDiv"></p>
+          <p class="detailsDiv">
+            Variables, Nesting, Mixins, Functions, Partials and Imports, etc.
+          </p>
           <div class="skill-bar">
             <span class="skill-p">
-              <span class="tooltip">70%</span>
+              <span class="tooltip">100%</span>
             </span>
           </div>
         </div>
-        <div data-speed="-1" class="container">
+        <div class="container">
           <div class="imgDiv"><img src="icons/javascript.svg" /></div>
           <p class="descriptionDiv">Javascript</p>
           <p class="detailsDiv">
@@ -194,11 +196,11 @@
           </p>
           <div class="skill-bar">
             <span class="skill-p">
-              <span class="tooltip">70%</span>
+              <span class="tooltip">90%</span>
             </span>
           </div>
         </div>
-        <div data-speed="-1" class="container">
+        <div class="container">
           <div class="imgDiv"><img src="icons/react.svg" /></div>
           <p class="descriptionDiv">React</p>
           <p class="detailsDiv">
@@ -207,11 +209,11 @@
           </p>
           <div class="skill-bar">
             <span class="skill-p">
-              <span class="tooltip">70%</span>
+              <span class="tooltip">30%</span>
             </span>
           </div>
         </div>
-        <div data-speed="-1" class="container">
+        <div class="container">
           <div class="imgDiv"><img src="icons/bootstrap.svg" /></div>
           <p class="descriptionDiv">Bootstrap</p>
           <p class="detailsDiv">
@@ -219,11 +221,11 @@
           </p>
           <div class="skill-bar">
             <span class="skill-p">
-              <span class="tooltip">70%</span>
+              <span class="tooltip">50%</span>
             </span>
           </div>
         </div>
-        <div data-speed="-1" class="container">
+        <div class="container">
           <div class="imgDiv"><img src="icons/git.svg" /></div>
           <p class="descriptionDiv">Git</p>
           <p class="detailsDiv">
@@ -236,7 +238,7 @@
             </span>
           </div>
         </div>
-        <div data-speed="-1" class="container">
+        <div class="container">
           <div class="imgDiv"><img src="icons/nodejs.svg" /></div>
           <p class="descriptionDiv">Node</p>
           <p class="detailsDiv">
@@ -246,10 +248,37 @@
           </p>
           <div class="skill-bar">
             <span class="skill-p">
-              <span class="tooltip">70%</span>
+              <span class="tooltip">20%</span>
             </span>
           </div>
         </div>
+      </section>
+      <section class="sixthPage">
+        <h1 class="bigText">Skonaktuj sie ze mną</h1>
+        <form
+          action="https://formsubmit.io/send/jakobjon990@gmail.com"
+          method="POST"
+        >
+          <label class="smallText" for="mail">Twój email</label>
+          <input
+            id="mail"
+            name="mail"
+            type="mail"
+            placeholder="Wpisz swój adres emai;"
+          />
+
+          <label class="smallText" for="msg">Twoja wiadomość</label>
+          <textarea
+            id="msg"
+            name="msg"
+            rows="5"
+            placeholder="Wpisz swoją wiadomość"
+          ></textarea>
+
+          <button value="Wyślij" type="submit" class="btnAboutMe smallText">
+            Wyślij
+          </button>
+        </form>
       </section>
     </main>
 
