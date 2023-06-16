@@ -169,11 +169,11 @@ window.addEventListener("scroll", function () {
 scrollToTopButton.addEventListener("click", function () {
   window.scrollTo({
     top: 0,
-    behavior: "smooth",
-  });
+    behavior: "smsd
 });*/ asd;
 ds;
 sds;
+sss;
 cs;
 asdd;
 asd;
